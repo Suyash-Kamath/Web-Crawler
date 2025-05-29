@@ -320,7 +320,7 @@
       results.innerHTML = "<li class='loading'>🔍 Crawling website... Please wait</li>";
 
       try {
-        const response = await fetch("http://localhost:3000/crawl", {
+        const response = await fetch("https://web-crawler-ppua.onrender.com/crawl", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ url })
@@ -345,7 +345,7 @@
     }
 
     function downloadCSV() {
-      window.location.href = "http://localhost:3000/download";
+      window.location.href = "https://web-crawler-ppua.onrender.com/download";
     }
 
     // Add enter key support
